@@ -1,7 +1,11 @@
 import 'dart:core';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:onthewheelpractice/size.dart';
+
+import '../placeinfo.dart';
 
 class placeModal extends StatelessWidget {
   placeModal(this.name, this.category, this.location, this.info, {Key? key})
@@ -43,6 +47,9 @@ class placeModal extends StatelessWidget {
                                 color: Colors.grey),
                           ),
                         ),
+                        IconButton(onPressed: (){
+                          Get.to(PlaceInfo());
+                        }, icon: Icon(Icons.search))
                       ],
                     ),
                     SizedBox(

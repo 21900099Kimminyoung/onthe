@@ -156,7 +156,7 @@ class _AddImagesState extends State<AddImages> {
                           minimumSize: Size(350, 50),
                           backgroundColor: Color(0xffBCCF9B))),
                 ],
-              )
+              ),
             ],
           ),
         ));

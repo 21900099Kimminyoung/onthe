@@ -54,8 +54,8 @@ class _SignUpState extends State<SignUp> {
                     Flexible(
                       child: TextField(
                         decoration: InputDecoration(
-                          labelText: '아이디',
-                        ),
+                            labelText: '아이디',
+                            labelStyle: TextStyle(color: Colors.black)),
                       ),
                     ),
                     ElevatedButton(
@@ -68,30 +68,32 @@ class _SignUpState extends State<SignUp> {
                   ],
                 ),
                 TextField(
-                  decoration:
-                      InputDecoration(labelText: '비밀번호', hintText: '8자리이상'),
+                  decoration: InputDecoration(
+                      labelText: '비밀번호',
+                      labelStyle: TextStyle(color: Colors.black),
+                      hintText: '8자리이상'),
                 ),
                 TextField(
                   decoration: InputDecoration(
-                      labelText: '비밀번호 확인', hintText: '비밀번호를 한번 더 입력하세요.'),
+                      labelText: '비밀번호 확인',labelStyle: TextStyle(color: Colors.black), hintText: '비밀번호를 한번 더 입력하세요.'),
                 ),
                 TextField(
-                  decoration: InputDecoration(labelText: '닉네임'),
+                  decoration: InputDecoration(labelText: '닉네임',labelStyle: TextStyle(color: Colors.black)),
                 ),
                 TextField(
                   decoration: InputDecoration(
-                      labelText: '이메일', hintText: 'ex)21900099@handong.ac.kr'),
+                      labelText: '이메일',labelStyle: TextStyle(color: Colors.black), hintText: 'ex)21900099@handong.ac.kr'),
                 ),
                 Row(
                   children: [
                     Flexible(
                       child: TextField(
                         decoration: InputDecoration(
-                            labelText: '휴대폰 번호', hintText: '010-0000-0000'),
+                            labelText: '휴대폰 번호', labelStyle: TextStyle(color: Colors.black),hintText: '010-0000-0000'),
                       ),
                     ),
                     Container(
-                      width: 115,
+                      width: 120,
                       child: ElevatedButton(
                         onPressed: () {},
                         child: Text("인증번호 받기"),
@@ -107,11 +109,11 @@ class _SignUpState extends State<SignUp> {
                     Flexible(
                       child: TextField(
                         decoration: InputDecoration(
-                            labelText: '인증번호', hintText: '숫자 6개 입력'),
+                            labelText: '인증번호',labelStyle: TextStyle(color: Colors.black), hintText: '숫자 6개 입력'),
                       ),
                     ),
                     Container(
-                      width: 115,
+                      width: 120,
                       child: ElevatedButton(
                         onPressed: () {},
                         child: Text("확인"),
@@ -135,7 +137,10 @@ class _SignUpState extends State<SignUp> {
               ),
               ElevatedButton(
                   onPressed: () {},
-                  child: Text("가입", style: TextStyle(fontSize: 25),),
+                  child: Text(
+                    "가입",
+                    style: TextStyle(fontSize: 25),
+                  ),
                   style: TextButton.styleFrom(
                       minimumSize: Size(350, 50),
                       backgroundColor: Color(0xffBCCF9B))),
