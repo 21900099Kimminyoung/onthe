@@ -16,7 +16,7 @@ class Newplace extends StatefulWidget {
 }
 
 class _NewplaceState extends State<Newplace> {
-  final List<String> _placeList = ['복지시설', '편의시설', '병원','식당','카페','음식점'];
+  final List<String> _placeList = ['복지시설', '편의시설','교육시설','숙박시설', '병원','식당','카페','음식점','마트','기타'];
   String _selectedValue = '복지시설';
 
   @override

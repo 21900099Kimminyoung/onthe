@@ -305,10 +305,7 @@ class _NaverMapTestState extends State<NaverMapTest> {
                                       style: TextStyle(
                                           fontSize: 12,
                                           color: Color(0xFF968686))),
-                                  Text('회원정보수정',
-                                      style: TextStyle(
-                                          fontSize: 12,
-                                          color: Color(0xFF968686)))
+
                                 ],
                               )
                             ],

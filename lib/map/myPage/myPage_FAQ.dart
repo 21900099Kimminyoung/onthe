@@ -39,19 +39,6 @@ class MyPage_FAQ extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: Stack(
-        children: <Widget>[
-          Align(
-            //장소등록 '+' 아이콘
-            alignment: Alignment.bottomRight,
-            child: FloatingActionButton(
-              onPressed: () {
-              },
-              child: Icon(Icons.question_answer,color: Colors.white,),
-            ),
-          ),
-        ],
-      ),
     );
   }
 }
